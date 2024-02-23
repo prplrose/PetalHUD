@@ -6,6 +6,5 @@ public class PetalHUDClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-
     }
 }

@@ -6,6 +6,7 @@
   "mixins": [
   ],
   "client": [
+    "CompassCrosshairMixin"
   ],
   "injectors": {
     "defaultRequire": 1
