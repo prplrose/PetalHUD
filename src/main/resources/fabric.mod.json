@@ -15,6 +15,9 @@
     ],
     "main": [
       "com.github.prplrose.petalhud.PetalHUD"
+    ],
+    "modmenu": [
+      "com.github.prplrose.petalhud.settings.screen.ModMenu"
     ]
   },
   "mixins": [

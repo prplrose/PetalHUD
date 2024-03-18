@@ -1,0 +1,8 @@
+{
+  "gui.petalhud.settings.title": "Petal HUD settings",
+  "gui.petalhud.settings.crosshair.title": "Crosshair settings",
+  "gui.petalhud.settings.crosshair.x_color": "Crosshair east (+X) color",
+  "gui.petalhud.settings.crosshair.y_color": "Crosshair up (+Y) color",
+  "gui.petalhud.settings.crosshair.z_color": "Crosshair south (-Z) color",
+  "gui.petalhud.settings.crosshair.preview": "Crosshair preview"
+}

@@ -4,6 +4,7 @@
   "package": "com.github.prplrose.petalhud.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ServerTickrateMixin"
   ],
   "client": [
     "CompassCrosshairMixin"
