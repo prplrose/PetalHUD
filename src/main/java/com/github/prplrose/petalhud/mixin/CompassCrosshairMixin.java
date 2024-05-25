@@ -44,12 +44,11 @@ public class CompassCrosshairMixin {
         float pACos = MathHelper.abs(MathHelper.cos(pitch*MathHelper.RADIANS_PER_DEGREE));
 
         RenderSystem.setShaderColor(
-                 getColor(x.x, yawSin)*pACos + getColor(y.x, pSin) + getColor(z.x, yawCos)*pACos,
-                 getColor(x.y, yawSin)*pACos + getColor(y.y, pSin) + getColor(z.y, yawCos)*pACos,
-                 getColor(x.z, yawSin)*pACos + getColor(y.z, pSin) + getColor(z.z, yawCos)*pACos,
+                getColor(x.x, yawSin)/* *pACos*/ + /*getColor(y.x, pSin) + */getColor(z.x, yawCos)/* *pACos*/,
+                getColor(x.y, yawSin)/* *pACos*/ + /*getColor(y.y, pSin) + */getColor(z.y, yawCos)/* *pACos*/,
+                getColor(x.z, yawSin)/* *pACos*/ + /*getColor(y.z, pSin) + */getColor(z.z, yawCos)/* *pACos*/,
                 1f
         );
-        //RenderSystem.blendFuncSeparate(GlStateManager.SrcFactor.ONE_MINUS_DST_COLOR, GlStateManager.DstFactor.ONE_MINUS_SRC_COLOR, GlStateManager.SrcFactor.ONE, GlStateManager.DstFactor.ZERO);
     }
 
     @Inject(method = "renderCrosshair", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;defaultBlendFunc()V", shift = At.Shift.AFTER))
